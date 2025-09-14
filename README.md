@@ -1,5 +1,5 @@
 # PenetratorBot (Steam Version Port)
-Ported from the original PS Remote Play version
+Ported from the original PS Remote Play version.
 Original project: https://github.com/pjclas/PenetratorBot
 
 # PenetratorBot
