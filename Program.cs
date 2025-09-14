@@ -45,15 +45,10 @@ namespace PenetratorBot
             {
                 Console.WriteLine("Press 'Q' to quit program.");
 
-                // Inject
-                // int pid = Interceptor.Inject();
-                // remotePlayProcess = Process.GetProcessById(pid);
 
-                // ADDED CODE
-                //remotePlayProcess = Process.GetProcessesByName("StreamingClient").FirstOrDefault();
+                // find steam remote play process
                 remotePlayProcess = Process.GetProcessesByName("streaming_client").FirstOrDefault();
-                //remotePlayProcess = Process.GetProcessById(26008);
-                //remotePlayProcess = Process.GetProcessesByName("Grand Theft Auto V [Streaming]").FirstOrDefault();
+
                 if (remotePlayProcess == null)
                 {
                     Console.WriteLine("StreamingClient process not found. Exiting program...");
@@ -95,3 +90,4 @@ namespace PenetratorBot
         }
     }
 }
+
