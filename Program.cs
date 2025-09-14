@@ -33,14 +33,8 @@ namespace PenetratorBot
 
             // create new penetrator worket bot
             Penetrator penetrator = new Penetrator();
-
-            // setup callback to interceptor
-            //Interceptor.Callback = new InterceptionDelegate(penetrator.OnReceiveData);
-            //Interceptor.EmulateController = false;
-            //Interceptor.InjectionMode = InjectionMode.Compatability;
-
             Process remotePlayProcess;
-            // Attempt to inject into PS Remote Play
+            // Attempt to inject into Steam Remote Play
             try
             {
                 Console.WriteLine("Press 'Q' to quit program.");
@@ -90,4 +84,5 @@ namespace PenetratorBot
         }
     }
 }
+
 
